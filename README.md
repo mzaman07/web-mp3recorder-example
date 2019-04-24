@@ -4,7 +4,7 @@ Example of using the CreateMediaStreamSource and Navigation.getMedia APIs in mod
 
 # Requirements
 
-Any Web Browser and HTTP Server.
+Any modern Web Browser and HTTP Server.
 
 # Install and Setup
 
