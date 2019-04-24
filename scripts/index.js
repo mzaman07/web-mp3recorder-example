@@ -27,7 +27,6 @@ record.onclick = function() {
   audioCtx = new AudioContext();
   navigator.mediaDevices.getUserMedia({ audio: true, video: false })
     .then(function(stream) {
-      // startTime();
       elapsedTime = 0;
       stop.disabled = false;
       record.disabled = true;
@@ -48,12 +47,6 @@ record.onclick = function() {
       // destination is where the audio be output
       processor.connect(audioCtx.destination);
       console.log("recorder started");
-
-      // action on the input audio stream from mic
-      
-      // visualize
-      // canvasCtx.clearRect(0, 0, WIDTH, HEIGHT);
-      draw();
 
       // setup time interval
 
@@ -98,14 +91,11 @@ var initWorker = function() {
     mp3Worker.onmessage = function(e) {
       switch(e.data.cmd) {
         case 'end':
-          // mp3Audio = e.data.buf;
           console.log("mp3 data length" +  e.data.buf.length + " B (bytes).");
-          // console.log(mp3Audio);
 
           var blob = new Blob(e.data.buf, {type: 'audio/mp3'});
           var url = window.URL.createObjectURL(blob);
           console.log(url);
-          // currentAudio = new Audio(url);
           player.controls = true;
           player.src = url;
           stopWorker();
