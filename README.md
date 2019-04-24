@@ -1,5 +1,5 @@
 # web-mp3recorder-example
-Example of using the CreateMediaStreamSource and Navigation.getMedia APIs in modern browsers. Converts raw microphone inputs into mp3 via the browser. This is only an example and anything beyond it should consider alternatives like encoding the audio on a server.
+Example of using the CreateMediaStreamSource and Navigation.getMedia APIs in modern browsers. Converts raw microphone inputs into mp3 via the browser with help from [lame.js](https://github.com/zhuker/lamejs). This is only an example and anything beyond it should consider alternatives like encoding the audio on a server.
 
 
 # Requirements
