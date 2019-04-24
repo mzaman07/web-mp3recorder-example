@@ -8,6 +8,6 @@ Any Web Browser and HTTP Server.
 
 # Install and Setup
 
-1.Just clone the repo and run and it should be setup.
-2.Spin up a HTTP Server, for example with python `python -m SimpleHTTPServer 8090`.
+1. Just clone the repo and run and it should be setup.
+2. Spin up a HTTP Server, for example with python `python -m SimpleHTTPServer 8090`.
 
